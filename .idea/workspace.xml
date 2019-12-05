@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eedb735-1686-46e0-933e-9de2c77d2b32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AboutComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DishdetailComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MenuComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/ActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/ActionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/leaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/leaders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/promotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/promotions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/baseUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/baseUrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Downloads/Lecture PDFs for this week-20190818/Lecture PDFs for this week-20190818.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Downloads/Lecture PDFs for this week-20190824/Lecture PDFs for this week-20190824.zip" beforeDir="false" />
     </list>
@@ -16,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -37,11 +49,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="229" />
     <option name="y" value="23" />
     <option name="width" value="1211" />
-    <option name="height" value="818" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,7 +112,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="23" width="1211" height="818" extended-state="1" />
+    <frame x="229" y="23" width="1211" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
@@ -113,7 +125,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3292011" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3301105" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
@@ -127,8 +139,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
