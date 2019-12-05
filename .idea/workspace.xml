@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eedb735-1686-46e0-933e-9de2c77d2b32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AboutComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DishdetailComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DishdetailComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeComponents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MenuComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/ActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/ActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/leaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/leaders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/promotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/promotions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/baseUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/baseUrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Downloads/Lecture PDFs for this week-20190818/Lecture PDFs for this week-20190818.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Downloads/Lecture PDFs for this week-20190824/Lecture PDFs for this week-20190824.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2-Bootstrap/Bootstrap4/conFusion" beforeDir="false" afterPath="$PROJECT_DIR$/../../2-Bootstrap/Bootstrap4/conFusion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +37,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="711" />
     <option name="y" value="23" />
     <option name="width" value="1211" />
     <option name="height" value="816" />
@@ -61,6 +49,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,7 +67,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -113,7 +101,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="229" y="23" width="1211" height="816" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2529412" />
