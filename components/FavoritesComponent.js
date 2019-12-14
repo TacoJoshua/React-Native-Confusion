@@ -19,6 +19,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Favorites extends Component {
+
   static navigationOptions = {
     title: "My Favorites"
   };
@@ -34,9 +35,9 @@ class Favorites extends Component {
           onPress: () => {
             Alert.alert(
               "Delete Favorite?",
-              "Are you sure you wish to delete the favorite dish" +
-                item.name +
-                "?",
+              "Are you sure you wish to delete the favorite dish " +
+              item.name +
+              "?",
               [
                 {
                   text: "Cancel",
@@ -71,21 +72,25 @@ class Favorites extends Component {
     };
 
     if (this.props.dishes.isLoading) {
-      return <Loading />;
-    } else if (this.props.dishes.errMess) {
+      return (
+        <Loading />
+      );
+    }
+    else if (this.props.dishes.errMess) {
       return (
         <View>
           <Text>{this.props.dishes.errMess}</Text>
         </View>
       );
-    } else {
+    }
+    else {
       return (
         <FlatList
           data={this.props.dishes.dishes.filter(dish =>
             this.props.favorites.some(el => el === dish.id)
           )}
           renderItem={renderMenuItem}
-          keyExtractor={item.id.toString()}
+          keyExtractor={item => item.id.toString()}
         />
       );
     }

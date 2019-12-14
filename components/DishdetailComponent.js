@@ -187,8 +187,6 @@ class Dishdetail extends Component {
                 leftIcon={<Icon name="user-o" type="font-awesome" />}
                 onChangeText={value => this.setState({ author: value })}
               />
-            </View>
-            <View>
               <Input
                 placeholder=" Comment"
                 leftIcon={<Icon name="comment-o" type="font-awesome" />}

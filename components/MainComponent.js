@@ -160,10 +160,10 @@ const FavoritesNavigator = createStackNavigator(
       headerStyle: {
         backgroundColor: "#512DA8"
       },
+      headerTintColor: "#fff",
       headerTitleStyle: {
         color: "#fff"
       },
-      headerTintColor: "#fff",
       headerLeft: (
         <Icon
           name="menu"
