@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Text, View, ScrollView, StyleSheet, Picker, Switch, Button, Modal, Alert } from "react-native";
 import DatePicker from "react-native-datepicker";
 import * as Animatable from 'react-native-animatable';
+import * as Permissions from 'expo-permissions';
+import { Notifications } from 'expo';
+import TabRouter from "react-navigation/src/routers/TabRouter";
 
 class Reservation extends Component {
   constructor(props) {
@@ -19,6 +22,30 @@ class Reservation extends Component {
     title: "Reserve Table"
   };
 
+  handleReservation() {
+    const { date, guests, smoking } = this.state;
+
+    Alert.alert(
+      'Your Reservation OK?',
+      `Number of guests: ${guests}\nSmoking? ${smoking ? 'Yes' : 'No'}\nDate and Time: ${date}`,
+      [
+        {
+          text: 'Cancel', onPress: () => {
+            console.log('Reservation Cancelled');
+            this.resetForm();
+          }, style: 'cancel'
+        },
+        {
+          text: 'OK', onPress: () => {
+            this.presentLocalNotification(this.state.date);
+            this.resetForm();
+          }
+        }
+      ],
+      { cancelable: false }
+    );
+  };
+
   resetForm() {
     this.setState({
       guests: 1,
@@ -27,20 +54,32 @@ class Reservation extends Component {
     });
   };
 
-  handleReservation() {
-    const { date, guests, smoking } = this.state;
+  async obtainNotificationPermission() {
+    let permission = await Permissions.getAsync(Permissions.USER_FACING_NOTIFICATIONS);
+    if (permission.status !== 'granted') {
+      permission = await Permissions.askAsync(Permissions.USER_FACING_NOTIFICATIONS);
+      if (permission.status !== 'granted') {
+        Alert.alert('Permission not granted to show notifications');
+      }
+    }
+    return permission;
+  }
 
-    Alert.alert(
-      'Your Reservation OK?',
-      `Number of guests: ${guests}\nSmoking? ${smoking ? 'Yes' : 'No'}\nDate and Time: ${date}`,
-      [
-        { text: 'Cancel', onPress: () => this.resetForm(), style: 'cancel' },
-        { text: 'OK', onPress: () => this.resetForm() },
-      ],
-      { cancelable: false }
-    );
-  };
-
+  async presentLocalNotification(date) {
+    await this.obtainNotificationPermission();
+    Notifications.presentLocalNotificationAsync({
+      title: 'Your Reservation',
+      body: 'Reservation for ' + date + ' requested',
+      ios: {
+        sound: true
+      },
+      android: {
+        sound: true,
+        vibrate: true,
+        color: '#512DA8'
+      }
+    });
+  }
 
   render() {
     return (
